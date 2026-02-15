@@ -1,0 +1,114 @@
+Si querenos usar algo como un promedio, considera usar un float, porque un promedi otiende a tener decimales
+
+float altura = 0
+
+
+
+Digamos que un igneniero quiere tener mucha precision (15 digitos) en un flotante.
+
+double cm;
+
+
+--------------------
+Tipos de datos
+--------------------
+void
+-- Por si es un elemento sin tipo
+
+char
+
+int
+
+float
+
+double
+
+--------------------
+Modificadores:
+--------------------
+====> Longitud
+long: (crece exponencialmente, osea 32 buts => 64 bits)
+
+short:
+
+====> Signos
+signed: Indica que la variable tiene signo, es predefinifa
+
+unsigned: (char e int), no se puede aplicar a float. Dice que la variable no tiene signo, solo enteros positivos
+
+====> Alcance y almacenamiento
+auto: predefinido, significa que la variable es local, por lo que solo existe en el segmento declarado
+
+const: Sera constante
+
+extern: Indica que la variable puede ser vista de forma externa por otros modulos
+
+register: Solicitaa que la variable sea almacenada en un registro del procesor (Del cpu, recuerda que es la mas rapida, pero pues obvio es la mas limitada). Para algo
+
+static: (la mas rara). Solo existe en codigo, pero tiene como nodos, como que puede reocrdar los valores anteriores. Son complicadas, pero utiles
+
+volatile: Alguien de afuera que otro modulo la puede modificar
+
+--------------------
+Ejemplos:
+--------------------
+
+const float pi - 3.1416
+
+#define pi 3.14159
+
+long double x;
+
+register unsigned char i; 
+-- Este lo que hace es que al ser unsigned, te da mas espacio, ya que no hay espacio para el negativo, aparte register hace que sea muy rapido
+
+static unsigned inst suma = 0
+-- 
+
+
+--------------------
+Notas:
+--------------------
+- Reconendacion: no usar variables globales, porque es dificil determinar de donde es, ya que cualquiera la puede modficiar.
+
+- Hace dificiles de depurar, porque cualquier cosa pudo pasar.
+
+
+
+
+--------------------
+Operador:
+--------------------
+++ :
+
+- :
+
+-- :
+
+% : Permite obtener el residuo de la division aritmetica
+
+Ejemplo: (a = a + b) === (a+ = b)
+
+== :
+
+!= :
+
+! : Si es algo verdadero, lo hace falto y viceversa
+
+--------------------
+Operadores logicos
+--------------------
+
+&& : AND
+
+|| : OR
+
+Ejemplo: 
+          (-10 < X)  &&  (X <= 20)     =>    -10<X&&X<=20
+
+====> Operadores Binarios (raros)
+
+& : 0001 1101 & 0011 0000 = 0001 0000
+| : 0001 1101 | 0011 000 = 0011 1101
+^ : Que sean diferentes los bites, si es verdad  ====> 0001 1101^0011 0000 = 0010 1101
+~ : Los cambia ====> ~(0001 1101) = 1110 0010

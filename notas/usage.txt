@@ -1,0 +1,3 @@
+gcc ./programas/binaries.c -o binarios
+
+.\micodigo.exe
