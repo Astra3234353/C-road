@@ -9,7 +9,7 @@ int main() {
   int invisibilad = 4;
 
   personaje = personaje | volar;
-  // Aqui le damos al personaje la habilidad volar 010
+  // Aqui le damos al personaje la habilidad volar 010 // 000 | 010 = 010  
 
   personaje = personaje | veneno;
   // Aqui le damos al personaje veneno (+ acomulado volar) 011
